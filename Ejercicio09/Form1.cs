@@ -47,10 +47,10 @@ namespace Ejercicio09
             {
                 billetes = cantidad / 2000;
                 lResultado.Text = lResultado.Text + billetes + " billetes de 2000\n";
-                cantidad = cantidad % 5000;
+                cantidad = cantidad % 2000;
             }
 
-            if (cantidad <= 1000)
+            if (cantidad >= 1000)
             {
                 billetes = cantidad / 1000;
                 lResultado.Text = lResultado.Text + billetes + " billetes de 1000\n";
@@ -66,14 +66,14 @@ namespace Ejercicio09
 
             if (cantidad >= 25)
             {
-                billetes = cantidad / 100;
+                billetes = cantidad / 25;
                 lResultado.Text = lResultado.Text + billetes + " monedas de 25\n";
-                cantidad = cantidad % 100;
+                cantidad = cantidad % 25;
             }
 
             if (cantidad >= 5)
             {
-                billetes = cantidad * 5;
+                billetes = cantidad / 5;
                 lResultado.Text = lResultado.Text + billetes + " monedas de 5\n";
                 cantidad = cantidad % 5;
             }
